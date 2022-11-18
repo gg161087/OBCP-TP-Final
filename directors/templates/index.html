@@ -1,0 +1,15 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+
+<h1>Local Cine Collection Home</h1>
+    <p>Welcome to <em>Cine Collection</em>, a very basic Django Website</p>
+<h2>Dynamic content</h2>
+    <p>The Collection has the following record counts:</p>
+    <ul class="sidebar-nav">
+        <li><strong>Films:</strong> {{ num_films }}</li>
+        <li><strong>Copies:</strong> {{ num_instances }}</li>
+        <li><strong>Copies available:</strong> {{ available }}</li>
+        <li><strong>Authors:</strong> {{ num_authors }}</li>
+    </ul>
+{% endblock %}
